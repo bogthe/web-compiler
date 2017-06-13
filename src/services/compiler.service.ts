@@ -27,7 +27,7 @@ export class CompilerService {
         this.transformerSubject.next(JSON.stringify(transformedAst));
 
         let compiledCode = compiler().codeGenerator(transformedAst);
-        this.codeSubject.next(JSON.stringify(compiledCode));
+        this.codeSubject.next(compiledCode);
     }
 
     public codeGenerator(): Observable<string> {
