@@ -1,28 +1,28 @@
-# WebCompiler
+# Angular2 + Super Tiny Compiler
+Status: ![build status](https://travis-ci.org/bogthe/web-compiler.svg?branch=master)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.
+Test out the live version [here!](https://webstc-162d7.firebaseapp.com/)
 
-## Development server
+## Purpose
+This angular2 app is a demo showcasing the inner-workings of the super tiny compiler. I am currently using my version which has been TDD-ed after the original. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- [Original here](https://github.com/thejameskyle/the-super-tiny-compiler) 
+- [Own version here](https://github.com/bogthe/super-tdd-compiler)
 
-## Code scaffolding
+## Why tho?
+This website demo's the `super` capabilities of the super tiny compiler! It displays what each part of the compiler outputs throughout the process. Should make you feel more confident when diving into understanding it! :)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+## Supported languages
+More about which language the compiler supports [here](https://github.com/bogthe/super-tdd-compiler)
 
-## Build
+Some inputs you can try:
+- `(add 4 7)`
+- `(substract 4 (add 7 9 2))`
+- Generally speaking `(functionName params...)`
+- Write as many as you want and nest them however!
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Found something you don't like?
+Head down to the [main repo](https://github.com/bogthe/super-tdd-compiler) and have a go at fixing stuff!
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Credit
+I give all credit for the compiler to the original, as I did in my own compilers repo ;)
