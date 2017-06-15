@@ -1,13 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
+body, input, select, textarea {
+		color: #666;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 16pt;
+		font-weight: 300;
+		line-height: 1.65em;
+}
 
-body > .container{
-    padding: 60px 0px 0;
+html, body { height: 100%; }
+
+.inner-side{
+	background-color:#C62E65;
+	min-height:100%;
+	color: #E7ECEF;
+	padding: 50px;
 }
-.navbar-header {
-    float: left;
-    padding: 15px;
-    text-align: center;
-    width: 100%;
+
+.compiler-side{
+	padding: 50px;
 }
-.navbar-brand {float:none;}
+
+.inner-h{
+	color: #E7ECEF;
+}
+
+.compiler-h{
+	color: #C62E65;
+}
