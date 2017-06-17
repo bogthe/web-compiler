@@ -18,15 +18,15 @@ export class CompilerService {
 
     private triggerObservables() {
         let tokens = compiler().tokenizer(this.code);
-        this.tokenSubject.next(JSON.stringify(tokens));
+        this.tokenSubject.next(JSON.stringify(tokens, null, '\t'));
 
         let ast = compiler().parser(tokens);
-        this.parserSubject.next(JSON.stringify(ast));
+        this.parserSubject.next(JSON.stringify(ast, null, '\t'));
 
         let transformedAst = compiler().transformer(ast);
-        this.transformerSubject.next(JSON.stringify(transformedAst));
+        this.transformerSubject.next(JSON.stringify(transformedAst, null, '\t'));
 
-        let compiledCode = compiler().codeGenerator(transformedAst);
+        let compiledCode = compiler().codeGenerator(transformedAst, null, '\t');
         this.codeSubject.next(compiledCode);
     }
 
