@@ -48,6 +48,10 @@ html, body { height: 100%; }
 	color: #C62E65;
 }
 
+.left-pane{
+	position: fixed;
+}
+
 .trade-marks{
 	position: fixed;
 	bottom: 0;

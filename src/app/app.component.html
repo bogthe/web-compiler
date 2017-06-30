@@ -2,22 +2,23 @@
   <div class="row">
     <h1 class="pull-right compiler-h">Compiler</h1>
   </div>
-
-  <div class="row padding">
-    <div class="input-group">
-      <input [(ngModel)]="input" type="text" class="form-control" placeholder="LISP code here..." (keyup.enter)="compileInput();">
-      <span class="input-group-btn">
+  <div class="col-xs-6 left-pane">
+    <div class="row padding">
+      <div class="input-group">
+        <input [(ngModel)]="input" type="text" class="form-control" placeholder="LISP code here..." (keyup.enter)="compileInput();">
+        <span class="input-group-btn">
         <button (click)="compileInput();" class="btn btn-success" type="button">Compile!</button>
       </span>
+      </div>
     </div>
-  </div>
 
-  <div class="row text-center">
-    <span class="glyphicon glyphicon-arrow-down"></span>
-  </div>
+    <div class="row text-center">
+      <span class="glyphicon glyphicon-arrow-down"></span>
+    </div>
 
-  <div class="row padding">
-    <textarea class="form-control" [(ngModel)]="compilerOutput" cols="30" rows="10" readonly></textarea>
+    <div class="row padding">
+      <textarea class="form-control" [(ngModel)]="compilerOutput" cols="30" rows="10" readonly></textarea>
+    </div>
   </div>
 </div>
 
